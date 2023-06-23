@@ -7,6 +7,7 @@
 body {
     background-color: #ffffff;
     padding: 30px 40px 0;
+    font-family: sans-serif;
 }
 
 nav {
@@ -21,6 +22,7 @@ nav {
 
 .nav-item {
     padding: 12px 24px;
+    font-size: 20px;
     transition: color 0.2s ease-in-out;
 }
 
@@ -35,11 +37,12 @@ nav {
 
 .left-section {
     margin-top: 100px;
-    width: 50%;
+    width: 700px;
 }
 
 .left-section h3 {
     font-size: 2.2rem;
+    font-weight: 400;
 }
 
 .left-section img {
@@ -48,6 +51,7 @@ nav {
 }
 
 .left-section h1 {
+    font-family: 'Fredoka One';
     font-size: 4.2rem;
     margin-top: 1.0rem;
 }
@@ -55,6 +59,8 @@ nav {
     display: flex;
     align-items: center;
     padding: 08px 0;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .sub-headlines {
@@ -67,12 +73,14 @@ nav {
     background-color: #ff6347;
     padding: 10px;
     border-radius: 50%;
-    width: 15px;
+    width: 35px;
 }
 
 .text {
-    margin: 20px 0;
-    font-size: 12px;
+    margin: 30px 0 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #949292;
 }
 
 .action-btn {
@@ -82,6 +90,8 @@ nav {
     background-color: #ff6347;
     border: none;
     color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .right-section {
@@ -92,19 +102,32 @@ nav {
 }
 
 .headphone-div img:first-child {
+    /* border: 1px solid skyblue; */
     width: 150px;
     position: relative;
     top: 0;
-    left: 10%;
+    left: 100px;
     z-index: -2;
 }
 
 .discount-content {
+    /* border: 1px solid blueviolet; */
+    /* background-color: violet; */
+    font-family: 'Fredoka One';
     position: absolute;
     z-index: -1;
-    right: 39%;
-    bottom: 28%;
+    right: 577px;
+    bottom: 200px;
     color: #ffffff;
+}
+
+.discount-content h4 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.discount-content h1 {
+    font-size: 46px;
 }
 
 .headphone-div img:last-child {
@@ -142,10 +165,9 @@ nav {
     background-color: #000000;
 }
 
-/* media query */
-@media screen and (max-width: 540px){
+/************************** media query **************************/
+@media screen and (min-width: 320px) and (max-width: 480px){
 
-    
     body {
         overflow-x: hidden;
         padding: 0;
@@ -165,33 +187,45 @@ nav {
         display: none;
     }
 
+    .nav-item{
+        font-size: 20px;
+    }
+
     .icons {
         width: 140px;
     }
 
     .intro-section {
-        width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column-reverse;
     }
 
     .right-section {
-        width: 100%;
         text-align: center;
         position: relative;
     }
 
-    .discount {
+    .headphone-div img:first-child{
         max-width: 80px;
+        position: relative;
+        left: 20px;
     }
 
     .discount-content {
         font-size: 10px;
         position: absolute;
-        left: -7%;
-        bottom: 33%;
+        left: 58px;
+        bottom: 138px;
 
+    }
+
+    .discount-content h4 {
+        font-size: 8px;
+    }
+
+    .discount-content h1 {
+        font-size: 22px;
     }
 
     .headphone-img {
@@ -206,7 +240,7 @@ nav {
         text-align: left;
         width: 100%;
         margin: 0px;
-        padding: 12px;
+        padding: 15px;
     } 
 
     .left-section h3 {
@@ -226,6 +260,10 @@ nav {
         padding-left: 18px;
     }
 
+    .sub-headline {
+        font-size: 12px;
+    }
+
     .sub-headline img {
         width: 10px;
     }
@@ -236,6 +274,7 @@ nav {
         word-spacing: 0.8px;
         letter-spacing: 1.2px;
         margin-top: 08px;
+        font-size: 15px;
     }
 
     .action-btn {
@@ -244,6 +283,92 @@ nav {
         font-weight: bold;
         font-size: 12px;
         padding: 10px 12px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .logo {
+        width: 90px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .nav-items {
+        margin-left: 30px;
+    }
+
+    .icons {
+        width: 250px;
+    }
+
+    .left-section h3 {
+        font-size: 22px;
+    }
+
+    .left-section img {
+        width: 25px;
+    }
+
+    .left-section h1 {
+        font-size: 40px;
+    }
+
+    .sub-headlines {
+        padding-left: 18px;
+    }
+
+    .sub-headline {
+        font-size: 15px;
+    }
+    
+    .sub-headline img {
+        width: 15px;
+    }
+
+    .right-section {
+        margin-left: 30px;
+    }
+
+    .headphone-div img:first-child {
+        width: 90px;
+        position: relative;
+        top: 300px;
+        left: 50px;
+    }
+
+    .discount-content {
+        font-size: 15px;
+        position: absolute;
+        right: 242px;
+        bottom: 175px;
+
+    }
+
+    .discount-content h4 {
+        font-size: 10px;
+    }
+
+    .discount-content h1 {
+        font-size: 24px;
+    }
+
+    .headphone-div img:last-child {
+        width: 320px;
+        position: relative;
+        top: 0px;
+        left: 50px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .action-btn {
+        font-size: 14px;
     }
 }
 

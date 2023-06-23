@@ -2,6 +2,8 @@
 
 ## Table of contents
 
+- [Product Home Page](#product-home-page)
+  - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
@@ -21,7 +23,7 @@
 
 ### Screenshot
 
-![](./Screenshot-Project-7.png)
+![](./Project-7-SS.png)
 
 
 ## My process
